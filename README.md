@@ -12,7 +12,7 @@ This project demonstrates **Streamlit app structure**, **modular Python design**
 
 | Folder / File | Description |
 |----------------|-------------|
-| **__pycache__/** | Stores Python’s compiled bytecode files. |
+| **__pycache__/** | Stores Python's compiled bytecode files. |
 | **venv/** | (Optional) Virtual environment for dependency management. |
 | **functions.py** | Handles reading and writing of todos from the text file. |
 | **requirements.txt** | Lists the dependencies required for running the app. |
@@ -37,27 +37,30 @@ This project demonstrates **Streamlit app structure**, **modular Python design**
 ```bash
 git clone https://github.com/jasmininnaka24/bucketlist-app-streamlit.git
 cd bucketlist-app-streamlit
-2️⃣ Create a Virtual Environment (Optional but Recommended)
-bash
-Copy code
+```
+
+### 2️⃣ Create a Virtual Environment (Optional but Recommended)
+```bash
 python -m venv venv
 source venv/bin/activate   # macOS/Linux
 venv\Scripts\activate      # Windows
-3️⃣ Install Dependencies
-bash
-Copy code
+```
+
+### 3️⃣ Install Dependencies
+```bash
 pip install -r requirements.txt
-4️⃣ Run the Streamlit App
-bash
-Copy code
+```
+
+### 4️⃣ Run the Streamlit App
+```bash
 streamlit run web.py
-🧠 How It Works
-When the app starts, it reads all items from todos.txt.
+```
 
-Users can add new items, which are then written back to the same file.
+---
 
-Streamlit’s session state dynamically updates the list in real time.
+## 🧠 How It Works
 
-All core logic for reading/writing is handled by functions.py.
-
-This modular design keeps UI and logic separate, ensuring better readability and scalability.
+- When the app starts, it reads all items from `todos.txt`.
+- Users can add new items, which are then written back to the same file.
+- Streamlit's session state dynamically updates the list in real time.
+- All core logic for reading/writing is handled by `functions.py`.
