@@ -17,23 +17,18 @@ This project demonstrates how to create a user-friendly web interface for managi
 
 ## 🗂️ Project Structure
 
-bucketlist-app-streamlit/
-├── pycache/ # Compiled Python files
-├── venv/ # Virtual environment (optional to include)
-├── functions.py # Handles reading/writing todos
-├── requirements.txt # Dependencies for the project
-├── todos.txt # File storing all bucket list items
-├── web.py # Main Streamlit web application
-
-yaml
-Copy code
-
----
-
-## ⚙️ Installation and Setup
-
-### 1. Clone the repository
 ```bash
+bucketlist-app-streamlit/
+├── __pycache__/           # Compiled Python files
+├── venv/                  # Virtual environment (optional to include)
+├── functions.py           # Handles reading/writing todos
+├── requirements.txt       # Dependencies for the project
+├── todos.txt              # File storing all bucket list items
+└── web.py                 # Main Streamlit web application
+⚙️ Installation and Setup
+1. Clone the repository
+bash
+Copy code
 git clone https://github.com/jasmininnaka24/bucketlist-app-streamlit.git
 cd bucketlist-app-streamlit
 2. Create a virtual environment (optional but recommended)
@@ -56,4 +51,3 @@ The app reads and writes todos from todos.txt.
 All file-handling and helper logic is abstracted into functions.py.
 
 Streamlit dynamically updates the UI whenever you add or modify items.
-
